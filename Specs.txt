@@ -1,0 +1,41 @@
+= SPEC-1: Linux Notepad Application
+:sectnums:
+:toc:
+
+== Background
+
+The aim of this project is to develop a versatile notepad application for Linux users. The application will cater to a broad audience including general users, developers, and writers. The goal is to provide a robust text editing experience with features such as basic text editing, a tabbed interface, the ability to insert images, vertical text highlighting, and comprehensive editing options.
+
+== Requirements
+
+The following requirements are prioritized using the MoSCoW method:
+
+=== Must Have
+
+- Basic text editing capabilities (cut, copy, paste, undo, redo).
+- A tabbed interface to allow multiple documents to be open simultaneously.
+- The ability to insert images into the text.
+- Vertical text highlighting and editing (similar to Notepad++).
+- Save and open files in various formats (e.g., .txt, .md, .rtf).
+- Support for common keyboard shortcuts.
+- An intuitive and user-friendly GUI.
+
+=== Should Have
+
+- Syntax highlighting for code snippets.
+- Basic formatting options (bold, italic, underline).
+- Search and replace functionality.
+- Word count and character count features.
+
+=== Could Have
+
+- Spell checking and auto-correct features.
+- Plugins or extensions to add additional functionalities.
+- Theme support (light and dark modes).
+- Collaboration features (real-time editing by multiple users).
+
+=== Won't Have
+
+- Advanced image editing capabilities.
+
+== Method
