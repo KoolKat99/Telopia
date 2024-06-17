@@ -1,5 +1,5 @@
 // document.cpp
-#include "document.h"
+#include "Document.h"
 
 void Document::load(const std::string &filePath) {
     // Load document from file

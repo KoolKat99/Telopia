@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/ian/VSCODE/Telopia_TextEditor",
-      "program": "/home/ian/VSCODE/Telopia_TextEditor/build/Debug/outDebug",
+      "cwd": "/home/ian/CODING/C++/Telopia",
+      "program": "/home/ian/CODING/C++/Telopia/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -1,8 +1,7 @@
-#include "NotepadWindow.h"
-
+#include "NotepadController.h"
 
 int main() {
-    NotepadWindow notepad;
-    notepad.show();
+    NotepadController controller;
+    controller.get_view()->show();
     return 0;
 }
