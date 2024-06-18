@@ -6,7 +6,7 @@ CXXFLAGS = `pkg-config --cflags gtk+-3.0`
 LDFLAGS = `pkg-config --libs gtk+-3.0`
 
 # Target executable
-TARGET = simple_notepad
+TARGET = notepad
 
 # Source files
 SRC = main.cpp NotepadWindow.cpp NotepadController.cpp
