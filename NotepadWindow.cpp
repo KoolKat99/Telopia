@@ -34,6 +34,10 @@ NotepadWindow::NotepadWindow(NotepadController* controller) : controller(control
     g_signal_connect(open_item, "activate", G_CALLBACK(on_menu_file_open), this);
     gtk_menu_shell_append(GTK_MENU_SHELL(file_menu), open_item);
 
+    recent_item = gtk_menu_item_new_with_label("Recent");
+    g_signal_connect(recent_item, "activate", G_CALLBACK(on_menu_file_recent), this);
+    gtk_menu_shell_append(GTK_MENU_SHELL(file_menu), recent_item);
+
     save_item = gtk_menu_item_new_with_label("Save");
     g_signal_connect(save_item, "activate", G_CALLBACK(on_menu_file_save), this);
     gtk_menu_shell_append(GTK_MENU_SHELL(file_menu), save_item);
@@ -178,6 +182,12 @@ void NotepadWindow::on_menu_file_new(GtkWidget *widget, gpointer data) {
 void NotepadWindow::on_menu_file_open(GtkWidget *widget, gpointer data) {
     NotepadWindow* self = static_cast<NotepadWindow*>(data);
     self->controller->on_open();
+}
+
+
+void NotepadWindow::on_menu_file_recent(GtkWidget *widget, gpointer data) {
+    NotepadWindow* self = static_cast<NotepadWindow*>(data);
+    self->controller->on_recent();
 }
 
 

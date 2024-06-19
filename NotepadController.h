@@ -14,6 +14,7 @@ class NotepadController {
         void on_save_as();
         void on_quit();
         void on_about();
+        void on_recent();
 
         NotepadWindow* get_view();
 

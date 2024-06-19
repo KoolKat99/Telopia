@@ -23,6 +23,8 @@ class NotepadWindow {
         static void on_menu_file_save_as(GtkWidget *widget, gpointer data);
         static void on_menu_file_quit(GtkWidget *widget, gpointer data);
         static void on_menu_help_about(GtkWidget *widget, gpointer data);
+        static void on_menu_file_recent(GtkWidget *widget, gpointer data);
+        
 
         NotepadController* controller;
         GtkWidget *window;
@@ -41,6 +43,7 @@ class NotepadWindow {
         //menu bar items
         GtkWidget* file_menu_item;
         GtkWidget* new_item;
+        GtkWidget* recent_item;
         GtkWidget* open_item;
         GtkWidget* save_item;
         GtkWidget* save_as_item;
